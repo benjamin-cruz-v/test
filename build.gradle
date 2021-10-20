@@ -57,3 +57,16 @@ dependencies {
     testImplementation("org.seleniumhq.selenium:selenium-java")
     testImplementation("io.github.bonigarcia:selenium-jupiter:${seleniumJupiterVersion}")
 }
+
+
+plugins {
+  id "org.sonarqube" version "3.3"
+}
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "benjamin-cruz-v_test"
+    property "sonar.organization", "benjamin-cruz-v"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
